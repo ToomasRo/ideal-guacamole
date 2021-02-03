@@ -43,6 +43,10 @@ h3{
 hr{
     width: 66%;
 }
+header img{
+    object-fit: cover;  /*to "crop" the image*/
+    height: 120px;
+}
 
 /*navigation bar*/
 header nav ul{
@@ -65,15 +69,39 @@ header nav ul li a:hover{
 }
 
 /*middle section*/
+
 .about-us{
     margin: 1rem;
 }
-.about-us p{
+.about-us-flex{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+}
+.about-us-flex img{
+    display: none;
+    padding: 1rem;
+    align-items: center;
+    width: auto;
+    height: auto;
+    max-width: 400px;
+}
+.about-us-flex-text{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: 300px;
+}
+
+.about-us-flex-text{
+    display: inline;
+    flex-direction: column-reverse;
     text-transform: initial;
     text-align: justify;
 }
-.about-us img{
-    display: none;
+.about-us-flex-text p{
+
 }
 
 /*recipes*/
@@ -143,8 +171,38 @@ footer img{
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
+    h1{
+        font-size: 65px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .container img{
+        width: 280px;
+        height: 280px;
+    }
+
+    header img{
+        height: 350px;
+    }
+    
     .about-us img{
         display: block;
+    }
+
+    .gallery{
+        flex-direction: row;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+    .container img{
+        height: 345px;
+        width: 345px;
     }
 }
