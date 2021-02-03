@@ -14,19 +14,19 @@ img{
 
 h1{
     font-weight: 700;
-    font-size: 65px;
+    font-size: 50px;
     padding-bottom: 2rem;
     padding-top: 3rem;
 }
 h2{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35;
     padding-bottom: 1rem;
     padding-top: 2rem;
 }
 h3{
     font-weight: 300;
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 1rem;
 }
 /*header*/
@@ -41,7 +41,7 @@ h3{
     padding-bottom: 1rem;
 }
 hr{
-    width: 75%;
+    width: 66%;
 }
 
 /*navigation bar*/
@@ -55,6 +55,7 @@ header nav ul li a{
     color: #104275;
     text-decoration: none;
     font-weight: 300;
+    font-size: 22px;
 }
 header nav ul li a:visited{
     color: #0c335b;
@@ -64,14 +65,21 @@ header nav ul li a:hover{
 }
 
 /*middle section*/
+.about-us{
+    margin: 1rem;
+}
 .about-us p{
     text-transform: initial;
+    text-align: justify;
 }
 .about-us img{
     display: none;
 }
-/*TODO*/
+
 /*recipes*/
+.recipes{
+    margin: 1rem;
+}
 .gallery{
     display: flex;
     flex-direction: column;
@@ -83,15 +91,19 @@ header nav ul li a:hover{
     text-align: center;
 }
 .container h3{
+    font-size: 28px;
+    padding: 0.9rem 0.5rem;
+    border-radius: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
 }
 .container img{
     object-fit: cover;  /*to "crop" the image to a square*/
-    height: 350px;
-    width: 350px;
+    height: 320px;
+    width: 320px;
     border-radius: 50%;
 }
 
@@ -114,6 +126,7 @@ footer{
     padding: 1rem 0.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 20px;
 }
 footer img{
