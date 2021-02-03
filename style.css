@@ -99,6 +99,8 @@ header nav ul li a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(10px);
+    font-weight: bold;
+    color: #0a549d;
 }
 .container img{
     object-fit: cover;  /*to "crop" the image to a square*/
