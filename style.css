@@ -67,9 +67,45 @@ header nav ul li a:hover{
 .about-us p{
     text-transform: initial;
 }
-
+.about-us img{
+    display: none;
+}
+/*TODO*/
 /*recipes*/
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.recipe-image{
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+.container h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container img{
+    object-fit: cover;  /*to "crop" the image to a square*/
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
 
+/* TODO lisaülesanne elegantselt teha
+.gallery a{
+    color:rgba(0, 0, 0, 0);
+}
+.gallery a:hover{
+    color: #0a549d;
+}
+*/
+
+
+/*TODO*/
 
 /*bottom part*/
 footer{
@@ -89,4 +125,11 @@ footer img{
 }
 .social-media a{
     padding: 0.2rem;
+}
+
+
+@media only screen and (min-width: 950px) {
+    .about-us img{
+        display: block;
+    }
 }
