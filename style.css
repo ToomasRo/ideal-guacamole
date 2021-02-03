@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap');
 
+/*general*/
 *, header, main, footer{
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 100;   /* default size ja weight kõigile */
@@ -11,19 +12,24 @@ img{
     width: 100%;
 }
 
-header h1{
+h1{
     font-weight: 700;
     font-size: 65px;
-    padding-bottom: 3rem;
-    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
 }
-header h2{
+h2{
     font-weight: 400;
     font-size: 40px;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+h3{
+    font-weight: 300;
+    font-size: 30px;
     padding-top: 1rem;
 }
-
+/*header*/
 .logo{
     display: flex;
     justify-content: center;
@@ -34,11 +40,11 @@ header h2{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
 hr{
     width: 75%;
 }
 
+/*navigation bar*/
 header nav ul{
     display: flex;
     justify-content: space-around;
@@ -46,15 +52,41 @@ header nav ul{
 }
 header nav ul li a{
     text-emphasis: none;
+    color: #104275;
+    text-decoration: none;
+    font-weight: 300;
+}
+header nav ul li a:visited{
+    color: #0c335b;
+}
+header nav ul li a:hover{
+    color: #0a549d;
 }
 
-
-
+/*middle section*/
 .about-us p{
     text-transform: initial;
 }
 
+/*recipes*/
 
+
+/*bottom part*/
 footer{
     background-color: #172029;
+    color: #ffffff;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+footer img{
+    width: auto;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+}
+.social-media a{
+    padding: 0.2rem;
 }
