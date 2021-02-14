@@ -60,7 +60,7 @@ header nav ul {
 header nav ul li a {
   text-emphasis: none;
   color: #104275;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 300;
   font-size: 22px;
 }
